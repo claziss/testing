@@ -7,8 +7,8 @@ TESTS=compile.exp builtins.exp execute.exp ieee.exp unsorted.exp autopar.exp \
 #TESTS=dg.exp=nest.c
 DJ=runtest
 CPU=em arcem em4 em4_dmips em4_fpus em4_fpuda hs archs hs34 hs38 hs38_linux \
-	arc600 arc600_norm arc600_mul64 arc600_mul32x16 arc601 arc601_norm \
-	arc601_mul64 arc601_mul32x16 arc700
+	arc600 arc600_norm arc600_mul64  arc601 arc601_norm \
+	arc601_mul64 arc700
 
 ARC_TOOLS=`arc-elf32-gcc -dumpversion`
 DATE=`date +'%y.%m.%d %H:%M:%S'`
