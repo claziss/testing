@@ -6,8 +6,8 @@
 	stackalign.exp tree-prof.exp  tree-ssa.exp vect.exp weak.exp arc.exp
 TESTS=compile.exp builtins.exp execute.exp ieee.exp unsorted.exp dg.exp\
 	compat.exp struct-layout-1.exp lto.exp dg-torture.exp
-#ESTS=dg.exp
-DJ=timeout 60m runtest
+#TESTS=dg.exp
+DJ=timeout 4h runtest
 CPU=em arcem em4 em4_dmips em4_fpus em4_fpuda hs archs hs34 hs38 hs38_linux \
 	arc700 arc600 arc600_norm arc600_mul64
 
