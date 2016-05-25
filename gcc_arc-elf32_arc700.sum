@@ -1,4 +1,4 @@
-Test Run By claziss on Wed May 25 12:31:51 2016
+Test Run By claziss on Wed May 25 13:30:19 2016
 Target is arc-unknown-elf32
 Host   is x86_64-unknown-linux-gnu
 
@@ -3549,7 +3549,7 @@ PASS: gcc.dg/c11-atomic-4.c  (test for warnings, line 69)
 PASS: gcc.dg/c11-atomic-4.c  (test for warnings, line 75)
 PASS: gcc.dg/c11-atomic-4.c (test for excess errors)
 PASS: gcc.dg/c11-complex-1.c (test for excess errors)
-FAIL: gcc.dg/c11-complex-1.c execution test
+PASS: gcc.dg/c11-complex-1.c execution test
 PASS: gcc.dg/c11-float-1.c (test for excess errors)
 PASS: gcc.dg/c11-generic-1.c (test for excess errors)
 PASS: gcc.dg/c11-generic-1.c execution test
@@ -18195,8 +18195,8 @@ PASS: c-c++-common/wdate-time.c  -Wc++-compat  (test for excess errors)
 
 		=== gcc Summary ===
 
-# of expected passes		17773
-# of unexpected failures	2
+# of expected passes		17774
+# of unexpected failures	1
 # of expected failures		61
 # of unsupported tests		347
 /slowfs/nl20dwt2p002/cls/workspace_1/install/bin/arc-elf32-gcc  version 7.0.0 20160524 (experimental) (ARCompact/ARCv2 ISA elf32 toolchain 9c6f25a) 

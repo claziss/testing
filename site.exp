@@ -1,4 +1,4 @@
-set tmpdir "."
+set tmpdir "./tmp"
 set srcdir "$env(COMPSRC)/gcc/gcc/testsuite"
 
 set target_triplet arc-unknown-elf32
