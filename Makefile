@@ -10,7 +10,7 @@ TEST=
 #TESTS=dg.exp
 DJ=timeout 4h runtest
 CPU=em arcem em4 em4_dmips em4_fpus em4_fpuda hs archs hs34 hs38 hs38_linux 	\
-	arc700 arc600
+	arc700 arc600 arc600_mul64
 
 ARC_TOOLS=`arc-elf32-gcc -dumpversion`
 DATE=`date +'%y.%m.%d %H:%M:%S'`
