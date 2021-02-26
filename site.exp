@@ -1,8 +1,8 @@
 set tmpdir "./tmp"
-set srcdir "$env(COMPSRC)/gcc/gcc/testsuite"
+set srcdir "$env(COMPSRC)/arc-gcc/gcc/testsuite"
 
-set target_triplet arc-unknown-elf32
-set target_alias arc-elf32
+set target_triplet arc64-unknown-elf32
+set target_alias arc64-elf
 
 #set tool gcc
 set target_list arc-sim-nsimdrv
@@ -12,7 +12,7 @@ set CXXFLAGS ""
 
 set verbose 0
 
-set arc_board_dir "$env(COMPSRC)/toolchain"
+set arc_board_dir "$env(COMPSRC)/arc-toolchain"
 if ![info exists boards_dir] {
     lappend boards_dir "$arc_board_dir/dejagnu"
     lappend boards_dir "$arc_board_dir/dejagnu/baseboards"
@@ -20,19 +20,5 @@ if ![info exists boards_dir] {
     set boards_dir "$arc_board_dir/dejagnu"
     lappend boards_dir "$arc_board_dir/dejagnu/baseboards"
 }
-
-#set TORTURE_OPTIONS [list \
-#			 { -O3 -g } \
-#			 { -O2 -g } \
-#			 { -O3 -g -fno-omit-frame-pointer } \
-#			 { -O2 -g -fno-omit-frame-pointer } \
-#			 { -Os -g } ]
-
-#set TORTURE_OPTIONS [list \
-#			 { -O0 -g } \
-#			 { -Os -g -fno-omit-frame-pointer } ]
-
-#set TORTURE_OPTIONS [list \
-#			 { -Os -fpic -fno-gcse } ]
 
 #set nsim_flags "-p nsim_trace-output=run.log -on trace"
