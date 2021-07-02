@@ -13,7 +13,8 @@ $(CPU):
 	@mkdir -p tmp_$@
 	@echo "Running $(subst _, -,$@)"
 	cp site.exp tmp_$@; \
-	cd tmp_$@; mkdir -p tmp; mkdir -p tmp/dump1; mkdir -p tmp/dump2; \
+	cd tmp_$@; mkdir -p tmp; mkdir -p dump1; mkdir -p dump2; \
+	mkdir -p tmp/dump1; mkdir -p tmp/dump2; \
 	GCC_TEST_RUN_EXPENSIVE=1 ARC_MULTILIB_OPTIONS="-mfpu=$(subst _, -,$@)" \
 	$(DJ) --tool=gcc $(TESTS) || true
 	mv -u tmp_$@/gcc.sum gcc_$(MACHINE)_$@.sum
