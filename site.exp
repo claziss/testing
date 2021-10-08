@@ -1,5 +1,5 @@
 set tmpdir "./tmp"
-set srcdir "$env(COMPSRC)/arc-gcc/gcc/testsuite"
+set srcdir "$env(COMPSRC)/gcc/gcc/testsuite"
 
 set target_triplet arc64-unknown-elf32
 set target_alias arc64-elf
@@ -12,7 +12,7 @@ set CXXFLAGS ""
 
 set verbose 0
 
-set arc_board_dir "$env(COMPSRC)/arc-toolchain"
+set arc_board_dir "$env(COMPSRC)/toolchain"
 if ![info exists boards_dir] {
     lappend boards_dir "$arc_board_dir/dejagnu"
     lappend boards_dir "$arc_board_dir/dejagnu/baseboards"
