@@ -9,6 +9,8 @@ set target_list arc-sim-nsimdrv
 
 set CFLAGS ""
 set CXXFLAGS ""
+set HOSTCC gcc
+set HOSTCFLAGS "-O2"
 
 set verbose 0
 
