@@ -1,6 +1,6 @@
 TESTS ?=
 DJ = timeout 4h runtest
-CPU = none fpus fpud fpud_mwide fpud_mwide_m128 none_m128_msimd none_mcpu=hs5x
+CPU = none fpus fpud fpud_mwide fpud_mwide_m128 none_m128_msimd none_mcpu=hs5x none_mcpu=hs58
 
 ARC_TOOLS=`arc64-elf-gcc -dumpversion`
 DATE=`date +'%y.%m.%d %H:%M:%S'`
