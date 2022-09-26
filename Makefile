@@ -21,8 +21,10 @@ all: git
 $(CPU):
 	mkdir -p tmp_$@
 	cp site.exp tmp_$@; \
-	cd tmp_$@; mkdir -p tmp; mkdir -p tmp/dump1; mkdir -p tmp/dump2;	 \
-	ARC_MULTILIB_OPTIONS="-mcpu=$@" $(DJ) --tool=gcc $(TESTS) || true
+	cd tmp_$@; mkdir -p tmp; mkdir -p tmp/dump1; mkdir -p tmp/dump2; \
+	mkdir -p dump1; mkdir -p dump2; \
+	GCC_TEST_RUN_EXPENSIVE=1 ARC_MULTILIB_OPTIONS="-mcpu=$@" \
+	$(DJ) --tool=gcc $(TESTS) || true
 	mv -u tmp_$@/gcc.sum gcc_$(MACHINE)_$@.sum
 
 git: $(CPU)
